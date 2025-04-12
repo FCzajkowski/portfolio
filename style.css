@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+:root{
+    /* color pallete*/
+    --black:#111111;
+    --gray:#9b9b9b;
+    --white:#e5e5e5;
+    --purple:#a34fca;
+}
+
+*{
+    font-family: "Lexend Deca", sans-serif;
+}
+
+body{
+    margin:0 50px;
+    background-color: var(--black);
+    color:var(--white)
+}
+header img{
+    width:100px;
+    border-radius:200px;
+}
+header{
+    display:flex;
+    align-items: center;
+    padding:10px 30%;
+    justify-content: space-between;
+}
+
+main{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+h2{
+    font-size:40px;
+}
+header button{
+    background-color: transparent;
+    color:var(--white);
+    font-size:50px;
+    padding:5px 10px;
+    border:none;
+    transition:250ms;
+    font-weight:200;
+}
+
+header button:hover{
+    color:var(--purple);
+    transform: translateY(-2px);
+    box-shadow: 0px 10px 20px #a34fca10;
+}
+
+#about_me{
+    height:85vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#about_me h1{
+    font-size:150px;
+    margin:0;
+}
+#what_i_do, #from{
+    letter-spacing: 2px;
+    font-weight:300;
+    color:var(--gray);
+    margin-top:-10px;
+}
+#what_i_do{    
+    font-size:30px;
+}
+#from{
+    font-size:23px;
+}
+#technologies{
+    height:50vh;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:30px;
+    align-self: center;
+    flex-wrap: wrap;
+}
+.technology{
+    height:200px;
+    width:150px;
+    background-color: #131313;
+    border:3px solid var(--gray);
+    border-radius:15px;
+    color:var(--gray);
+    font-size:20px;
+    font-weight:300;
+    transition:350ms;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.technology:hover{
+    transform: rotate(2deg) scale(1.5);
+    box-shadow:0px 0px 10px var(--purple);
+    color:var(--purple);
+    border:3px solid var(--purple)
+}
+.technology i{
+    font-size:70px;
+    padding:20px;
+}
+.technology p{
+    margin:0;
+    padding:0;
+}
+
+#projects_section{
+    height:100vh;
+    display:flex;
+    justify-content: center;
+}
+
+#projects{
+    width:1650px;
+}
+#projects, #cubes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+#cubes{
+    margin-bottom:20px;
+}
+#projects *{
+    border-radius:30px;
+    transition: 250ms;
+}
+#projects img:hover{
+    transform: translateY(-2px);
+    box-shadow:0px 0px 15px #8f8f8f;
+}
+
+footer{
+    background-color: #131313;
+    margin:0px 20%;
+    padding:10px 40px;
+    text-align: center;
+}
+footer h2{
+    font-size:40px;
+}
+
+@media screen and (max-width: 1500px){
+    
+    #projects {
+        width: 100%;
+    }
+
+    #projects_section {
+        height: auto;
+        padding: 20px 0;
+    }
+
+    #projects, #cubes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #projects img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        margin: 0 20px;
+    }
+
+    header {
+        flex-direction: column;
+        padding: 10px 0;
+        gap: 10px;
+    }
+
+    header img {
+        width: 80px;
+    }
+
+    header button {
+        font-size: 30px;
+    }
+
+    #about_me h1 {
+        font-size: 60px;
+    }
+
+    #what_i_do {
+        font-size: 20px;
+    }
+
+    #from {
+        font-size: 16px;
+    }
+
+    #technologies {
+        height: auto;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .technology {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    footer {
+        margin: 0 10px;
+        padding: 10px 10px;
+    }
+
+    footer h2 {
+        font-size: 25px;
+    }
+}
