@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+$black: #0e0d0d;
+$white: #fefefe;
+$purple:#dc50ff;
+$gray:#97969F;
+$font-size:16px;
+@mixin selection{   color:$purple;}
+.fancy_font{
+    font-family: "Old Standard TT", serif;
+    font-weight: 700;
+}
+.color{color:$purple;}
+.hidden{
+    opacity: 0;transition: all 750ms;
+    transform:translateY(-10px);
+}
+.show{
+    opacity: 1;
+    transform:translateY(00px);
+}
+.tech{
+    font-size:22px;
+    *{
+        margin-right:10px;
+        transition:250ms;
+        &:hover{
+            @include selection();
+            transform:translateY(-1px);
+        }
+    }
+}
+/* ---------------------- DO NOT DELETE ----------------------*/
+::selection {@include selection();}
+::-moz-selection {@include selection();}
+p{
+    color:$gray;
+    font-size:$font-size;
+    font-weight:400;
+    @debug font-size;
+}
+
+
+@mixin transparent_button{
+    margin:0;
+    padding:0;
+    background-color: transparent;
+    color:$gray;
+    transition:250ms;
+    border:none;
+    font-size:$font-size;
+    &:hover{
+        color:$white
+    }
+}
+*{
+    font-family: "Raleway", sans-serif;
+    cursor: url('/static/img/arrowhead-rounded-outline.svg'), auto;
+
+}
+body{
+    margin:0;
+    padding:0;
+    padding-top:100px;
+    background-color: $black;
+    color:#fefefe;
+    h1, h2, h3, h4, h5, h6{
+        @extend .fancy_font;
+        margin:0;
+        padding:0;
+    }
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    #website{
+        width:600px;
+
+        header{
+            p{
+                animation: appear 350ms ease-out 0s 1 normal both;
+            }
+            h2{
+                animation: appear2 350ms ease-out 0s 1 normal both;
+            }
+            margin-bottom:40px;
+            p{
+                margin:2px 0px;
+                padding:0;
+            }
+            .margin{
+                margin:14px 0px;
+            }
+            .header_button{
+                @include transparent_button();
+                cursor: url('/static/img/hand-pointer.svg') !important;
+                &:hover{
+                    transform: translateY(-1px);
+                }
+            }
+        }
+    }
+
+    main{
+
+        .project{
+            margin-bottom:40px;
+            .placeholder_vid{
+                width:100%;
+                height:600px;
+                background-color: red;
+            }
+            h2{
+                font-size:20px;
+                font-weight:200;
+                margin-top:10px;
+                transition: 250ms;
+                &:hover{
+                    color:$purple;
+                    transform: translateY(-1px);
+                }
+            }
+            p{
+                margin-top:0px;
+            }
+        }
+    }
+
+    footer{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $white;
+        p{
+            color:$black;
+            font-weight:400;
+        }
+    }
+}
+
+
+::-webkit-scrollbar{
+    width:5px;    
+}
+::-webkit-scrollbar-track{
+    background-color: $black;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: $gray;
+    border-radius:0px;
+}
+
+
+@keyframes appear {
+    0%{
+        color:transparent;
+        transform: translateX(-10px);
+    }
+    100%{
+        color:$gray;
+        transform: translateX(0);
+    }
+}
+@keyframes appear2 {
+    0%{
+        color:transparent;
+        transform: translateX(-10px);
+    }
+    100%{
+        color:$gray;
+        transform: translateX(0);
+    }
+}
