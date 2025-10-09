@@ -106,7 +106,7 @@ body #website header .header_button:hover {
 body main .project {
   margin-bottom: 40px;
 }
-body main .project .placeholder_vid {
+body main .project .placeholder_vid, body main .project img {
   width: 100%;
   height: 600px;
   background-color: red;

@@ -5,6 +5,7 @@ $white: #fefefe;
 $purple:#dc50ff;
 $gray:#97969F;
 $font-size:16px;
+// video
 @mixin selection{   color:$purple;}
 .fancy_font{
     font-family: "Old Standard TT", serif;
@@ -104,7 +105,7 @@ body{
 
         .project{
             margin-bottom:40px;
-            .placeholder_vid{
+            .placeholder_vid, img{
                 width:100%;
                 height:600px;
                 background-color: red;

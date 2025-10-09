@@ -14,9 +14,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Project h2 redirects (robust mapping)
     const projectMap = {
+        'GridCSS - 2025': 'https://github.com/FCzajkowski/GridCSS',
         'Hajime Framework - 2025': 'https://fczajkowski.github.io/hajime-website/',
         'NimbleDB - 2025': 'https://github.com/FCzajkowski/NimbleDB',
         'Greenflow - 2024': 'https://github.com/FCzajkowski/GreenFlow---Oficjalne-Repozytorium',
+        'Gokart Booking - 2024': 'https://fczajkowski.github.io/gokart-booking/',
+        'PiSearch - 2024': 'https://pisearch.netlify.app/',
         'Gokart Booking - 2024': 'https://fczajkowski.github.io/gokart-booking/'
     };
     document.querySelectorAll('.project h2').forEach(h2 => {
