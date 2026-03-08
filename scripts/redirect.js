@@ -14,8 +14,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Project h2 redirects (robust mapping)
     const projectMap = {
+        'RDSLite - 2026': 'https://fczajkowski.github.io/RDSLiteWebsite/',
         'GridCSS - 2025': 'https://github.com/FCzajkowski/GridCSS',
-        'Hajime Framework - 2025': 'https://fczajkowski.github.io/hajime-website/',
+        'Hajime Framework - 2025': 'https://github.com/FCzajkowski/Hajime-Framework',
         'NimbleDB - 2025': 'https://github.com/FCzajkowski/NimbleDB',
         'Greenflow - 2024': 'https://github.com/FCzajkowski/GreenFlow---Oficjalne-Repozytorium',
         'Gokart Booking - 2024': 'https://fczajkowski.github.io/gokart-booking/',
