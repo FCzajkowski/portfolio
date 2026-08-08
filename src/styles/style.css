@@ -133,4 +133,56 @@ nav button.active {
 ::-webkit-scrollbar-thumb {
   background-color: #97969F;
   border-radius: 0px;
+}
+
+@media (max-width: 900px) {
+  main {
+    flex-direction: column;
+    min-height: auto;
+  }
+  aside {
+    width: 100%;
+    height: auto;
+    padding: 20px 10px 0;
+  }
+  #hero {
+    height: auto;
+  }
+  #hero nav {
+    flex-wrap: wrap;
+    gap: 8px;
+    padding-top: 10px;
+  }
+  .itemShow {
+    height: auto;
+    overflow: visible;
+    padding: 20px;
+  }
+  #DesignProjects {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  #DesignProjects img,
+  #DesignProjects img:first-child {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  header {
+    height: 50px;
+  }
+  aside h1 {
+    font-size: 2.2em;
+  }
+  aside p {
+    font-size: 1.1em;
+  }
+  #hero nav button {
+    font-size: 1em;
+    padding: 8px 12px;
+  }
+  .itemShow {
+    padding: 15px;
+  }
 }/*# sourceMappingURL=style.css.map */
